@@ -21,7 +21,7 @@ header div{
 }
 
 img {
-    border: 10px aliceblue solid;
+    border: 10px white solid;
     display: block;
     border-radius: 25px;
     max-width: 150px;
@@ -29,21 +29,22 @@ img {
     grid-column: 1/2;
 }
 
-header heading1 {
+header p {
     font-size: 4.5rem;
-    color: aliceblue;
+    color: white;
     grid-column: 3/5;
     display: block;
     margin: auto;
 }
 
-heading2 {
+heading1 {
     margin: 5px 10px;
     font-size: 2rem;
     background-color: cadetblue;
     padding: 5px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px 2px rgb(0 0 0/0.25);
+    color: white;
 }
 
 div{
@@ -64,6 +65,6 @@ footer{
     box-shadow: 5px 5px 10px 2px rgb(0 0 0/0.25);
     padding: 10px;
     margin: 15px;
-    color: aliceblue;
+    color: white;
     display: flex;
 }
