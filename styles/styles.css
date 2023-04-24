@@ -3,7 +3,8 @@ body {
     font-size: 16px;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Nunito', sans-serif;
 }
 
 header {
@@ -29,7 +30,7 @@ img {
     grid-column: 1/2;
 }
 
-header p {
+header h1 {
     font-size: 4.5rem;
     color: white;
     grid-column: 3/5;
@@ -37,7 +38,7 @@ header p {
     margin: auto;
 }
 
-heading1 {
+h2 {
     margin: 5px 10px;
     font-size: 2rem;
     background-color: cadetblue;
