@@ -1,0 +1,15 @@
+@media only screen and (min-width: 32.5rem){
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    header{
+        max-height: 300px;
+    }
+
+    img {
+        max-width: 150px;
+        max-height: 200px;
+        border: 15px white solid;
+    }
+}
