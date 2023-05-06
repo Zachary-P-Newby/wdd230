@@ -1,14 +1,16 @@
 body{
-    background-color: whitesmoke;
+    background-color: #E7E7E7;
     font-family: Arial, Helvetica, sans-serif;
     margin: 2rem auto;
 }
 
 h1{
-    color: crimson;
+    color: #F71735;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #F9C784;
     padding: 1.2rem;
+    border-top: #432818 solid 5px;
+    border-bottom: #432818 solid 5px;
 }
 
 header{
@@ -16,7 +18,7 @@ header{
 }
 
 nav{
-    background-color: chocolate;
+    background-color: #F71735;
     color: antiquewhite;
     display: grid;
     padding: 10px;
@@ -24,25 +26,25 @@ nav{
 
 nav a{
     margin: 1rem;
-    background-color: antiquewhite;
+    background-color: #F9C784;
     border-radius: 25px;
     padding: .8rem;
-    color: rgb(46, 34, 26);
+    color: #432818 ;
     text-align: center;
 }
 
 nav a:hover{
-    color: antiquewhite;
-    background-color: crimson;
+    color: #E7E7E7;
+    background-color: #485696;
 }
 /* -------------------------------------------------------------------- */
 
 #homepageMain #sitePurposeDiv{
     margin: 2rem 10%;
     display: block;
-    background-color: antiquewhite;
-    color: rgb(46, 34, 26);
-    border: 10px solid crimson;
+    background-color: #F9C784;
+    color: #432818;
+    border: 10px solid #F71735;
     padding: .5rem;
     max-width: 80%;
     border-radius: 25px;
@@ -64,20 +66,20 @@ img{
 
 #targetAudienceMain #targetAudience, #scenarios{
     background-color: antiquewhite;
-    border: solid crimson 10px;
+    border: solid #F71735 10px;
     border-radius: 25px;
     margin: 1rem;
     padding: .5rem;
-    color: rgb(46, 34, 26);
+    color: #432818;
 }
 
 #personas{
-    background-color: wheat;
+    background-color: #F9C784;
     border: solid cornflowerblue 10px;
     border-radius: 25px;
     margin: 1rem;
     padding: .5rem;
-    color: rgb(46, 34, 26);
+    color: #432818;
 }
 
 section{
@@ -85,6 +87,7 @@ section{
     background-color: whitesmoke;
     padding: .5rem;
     margin: .5rem;
+    color: #432818;
 }
 
 #scenarios ul{
@@ -94,16 +97,81 @@ section{
 #scenarios li{
     padding: 1rem;
     margin: 1rem;
-    background-color: wheat;
+    background-color: #F9C784;
     border-radius: 25px;
+    color: #432818;
 }
 
 /* -------------------------------------------------------------------- */
 
+#designMain {
+    margin: 2.5rem;
+    display: block;
+    background-color: #F9C784;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1rem;
+}
+
+#designMain #colorScheme{
+    margin: 0 auto;
+    background-color: white;
+    border: solid #F71735 10px;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+#designMain li{
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 25px;
+}
+
+#_432818{
+    background-color: #432818;
+    color: #E7E7E7;
+
+    /* #432818 */
+}
+
+#_F71735{
+    background-color: #F71735;
+}
+
+#_485696{
+    background-color: #485696;
+}
+
+#_E7E7E7{
+    background-color: #E7E7E7;
+}
+
+#_F9C784{
+    background-color: #F9C784;
+}
+
+#black{
+    color: black;
+    background-color: darkgray;
+}
+
+#typography{
+    text-align: center;
+    margin: 2rem;
+    background-color: antiquewhite;
+    padding: .8rem;
+    border-radius: 25px;
+    border: solid #F71735 10px;
+}
+
+#typography img{
+max-width: 200px;
+}
+
 /* -------------------------------------------------------------------- */
 
 footer{
-    background-color: cornflowerblue;
+    background-color: #485696;
     color: rgb(46, 34, 26);
     margin: 2rem auto;
     padding: .75rem;
