@@ -7,6 +7,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 5px;
+
     }
 
     #byupathways{
@@ -21,7 +22,8 @@
 
 
     #wacom{
-        max-width: 400px;
+        grid-row: (2/3);
+        grid-column: (1/3);
     }
 
 }
