@@ -2,7 +2,7 @@ body{
     background-color: burlywood;
     font-family: 'Prompt', sans-serif;
     color: rgb(2, 25, 21);
-    margin: 0;
+    margin: 0 auto;
     max-width: 100vw;
 }
 
@@ -13,13 +13,12 @@ header{
 }
 
 main{
-    display: grid;
-    padding: 10px;
+    display: block;
+    padding: 10vw;
     margin: 0 auto;
-    grid-template-columns: 1fr;
 }
 
-div{
+section{
     display: block;
     text-align: center;
     background-color: wheat;
