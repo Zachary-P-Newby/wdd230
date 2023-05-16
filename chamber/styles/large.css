@@ -1,0 +1,39 @@
+@media only screen and (min-width: 64rem) {
+
+    #copyright{
+        display: flex;
+        justify-content: center;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    #hero{
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    #hero img{
+        max-width: 100%;
+    }
+
+    #newsRelease{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    #spotlightSidebar{
+        max-height: 100%;
+        grid-column: 3/4;
+        grid-row: 1/4;
+        overflow: hidden;
+    }
+
+    #footerImg{
+        max-width: 8vw;
+        max-height: 8vw;
+        justify-self: center;
+    }
+}
