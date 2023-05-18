@@ -5,6 +5,34 @@
         justify-content: center;
     }
 
+    nav{
+        background-color: #F71735;
+        max-width: 100vw;
+    }
+
+    nav ul{
+        display: flex;
+        margin: 0;
+    }
+
+    nav ul li{
+        flex: 1 1 1rem;
+        text-align: center;
+        border-right: 1px solid #e7e7e7;
+    }
+
+    nav ul li a{
+        display: block;
+        font-size: 1rem;
+        padding: 2rem;
+    }
+
+    #navBurger{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
     main{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
