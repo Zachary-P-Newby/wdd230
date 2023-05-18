@@ -83,7 +83,9 @@ nav ul li a:hover{
     border: none;
     min-height: 5vh;
     min-width: 5vw;
+    max-width: 100%;
     font-family: "Noto Sans", sans-serif;
+    font-size: 2rem;
     display: block;
 }
 
