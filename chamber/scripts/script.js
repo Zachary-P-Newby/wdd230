@@ -16,7 +16,13 @@ months = Array("January", "Febuary", "March", "April", "May", "June", "July", "A
 
 document.getElementById("date").textContent = `${week[weekDay]}, ${currentDate.getDate()} ${months[month]} ${currentDate.getFullYear()}`;
 
-
+let banner = document.querySelector("#banner");
+if (weekDay  == 1 || weekDay == 2){
+    banner.style.display = "block";
+}
+else{
+    banner.style.display = "none";
+}
 
 
 

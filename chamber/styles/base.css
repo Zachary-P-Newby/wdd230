@@ -6,13 +6,6 @@ html, body{
     max-width: 100vw;
 }
 
-header{
-    background-color: #E7E7E7;
-    color: #F71735;
-    margin: 0 auto;
-    
-}
-
 h1, h2, h3, h4, a{
     font-family: 'Noto Sans', sans-serif;
 }
@@ -21,10 +14,23 @@ p{
     font-family: 'Calibri', 'Trebuchet MS', sans-serif sans-serif;
 }
 
-#imgPlusName {
+header{
+    background-color: #E7E7E7;
+    color: #F71735;
+    margin: 0 auto;   
+}
+
+#banner{
+    background-color: #485696;
+    color: #E7E7E7;
+    padding: .5vh;
+    text-align: center;
+}
+
+#headerTop {
 display: flex;
 justify-content: space-around;
-font-size: 20px;
+font-size: 2rem;
 padding: 10px;
 flex: auto;
 max-height: 15vw;
@@ -35,9 +41,21 @@ max-height: 15vw;
     max-height: 15vw;
 }
 
-#imgPlusName h1{
+#headerTop h1{
     margin-left: 5vw;
     font-size: 5vw;
+}
+
+#social{
+    display: flex;
+    flex-direction: column;
+    margin: 2vh;
+    justify-content: center;
+}
+
+#facebook, #linkedin{
+    min-width: 32px;
+    max-width: 4vw;
 }
 
 nav{
@@ -160,13 +178,28 @@ main{
     display: block;
 }
 
+
 #hero{
     position: relative;
-    max-height: 300px;
+    margin: 0 5px;
 }
 
 #heroImage{
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: #485696 solid 6px;
+    border-radius: 25px;
+}
+
+#hero h1{
+    color: #E7E7E7;
+    position: absolute;
+    text-align: center;
+    text-shadow: #432818 5px 5px;
+    top: 5px;
+    width: 100%;
+    height: 100%;
 }
 
 #callToAction{
@@ -178,25 +211,18 @@ main{
     padding: 10px;
     z-index: 7;
     position: absolute;
-    top: 55%;
-    left: 45%;
+    top: 64%;
+    left: 23%;
 }
 
 #callToAction:hover{
     background-color: #485696;
 }
 
-#hero h1{
-    color: #E7E7E7;
-    position: absolute;
-    top: 200px;
-    text-align: center;
-    left: 10%;
-    text-shadow: #432818 5px 5px;
-}
+
 
 main section{
-    margin: 10px;
+    margin: 1vw;
     background-color: #F9C784;
     padding: 8px;
     border-radius: 25px;
@@ -223,4 +249,16 @@ main section article{
     border: #432818 solid 6px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.15) inset;
     min-height: 16vh;
+}
+
+#warning, #monsterTruck, #gardeningSupplies{
+    max-width: 3rem;
+    display: inline;
+    float: left;
+    margin: 2%;
+}
+
+#join{
+    display: none;
+    text-align: center;
 }
