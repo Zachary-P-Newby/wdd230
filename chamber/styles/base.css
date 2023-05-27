@@ -192,7 +192,6 @@ main{
 
 #heroImage{
     width: 100%;
-    height: 100%;
     object-fit: cover;
     border: #485696 solid 6px;
     border-radius: 25px;
@@ -266,5 +265,10 @@ main section article{
 
 #join{
     display: none;
+    text-align: center;
+}
+
+#weather{
+    display: block;
     text-align: center;
 }

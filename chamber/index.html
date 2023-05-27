@@ -22,7 +22,7 @@
             <h4>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h4>
         </section>
         <section id="headerTop">
-            <a href="index.html" ><img id="headerImg" src="images/CJCC.png" alt="CJCC Logo"></a>
+            <a href="index.html" ><img id="headerImg" src="images/CJCC.webp" alt="CJCC Logo"></a>
             <h1>Carl Junction Chamber of Commerce</h1>
             
             <section id="social">
@@ -50,7 +50,11 @@
     <main>
         <!-- Differentiate small from medium view -->
             <div id="hero">
-                <img id="heroImage" src="images/hero.jpg" alt="hero image">
+                <img id="heroImage" src="images/wdd230-400.jpg" alt="hero image" sizes="50vw"
+                srcset="images/wdd230-400.jpg 400w,
+                images/wdd230-600.jpg 600w,
+                images/wdd230-1200.jpg 1200w"
+                >
                 <h1>Welcome to Carl Junction</h1>    
                 <button id="callToAction">Join us the Chamber!</button>
                 
@@ -62,12 +66,21 @@
             <h3>Chilidog Festival</h3>
             <p>Carl Junction is holding it's annual chili dog festival on June 23rd at the CJ comunnity center from 12pm to 6pm. Guests will be able to smaple chilis and hot dogs froma around the world.</p>
         </section>
+
         <section id="weather">
             <h2>The Weather &#9729;</h2>
-            <picture id="weather">
-                <img alt="windy" src="images/windy.png">
-            </picture>
+            <div>
+                <figure>
+                    <img alt="windy" src="images/windy.png">
+                    <h4><span id="condition"></span></h4>
+                    <h4><span id="temperature"></span>&#8457;</h4>
+                </figure>
+
+                <p>Windspeed: <span id="windSpeed"></span></p>
+                <p>Windchill: <span id="windChill"></span></p>
+            </div>
         </section>
+
         <section id="newsRelease">
             <h2>News Release</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc scelerisque viverra mauris in. Auctor augue mauris augue neque gravida.</p>
@@ -92,7 +105,7 @@
             </article>
             <article>
                 <h3>Gardening Tips</h3>
-                <img id="gardeningSupplies" src="images/gardenSupplies.png" alt="Garden Supplies">
+                <img id="gardeningSupplies" src="images/gardenSupplies.webp" alt="Garden Supplies">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc scelerisque viverra mauris in. Auctor augue mauris augue neque gravida.
             </article>
         </section>
@@ -117,5 +130,6 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
