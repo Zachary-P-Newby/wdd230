@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32rem) {
+@media only screen and (min-width: 45rem) {
     body{
         max-width: 100vw;
         display: block;
@@ -51,4 +51,82 @@
         left: 40%;
     }
 
+    #discoverMain{
+        display: flex;
+        justify-content: center;
+    }
+
+    #discoverMain #CjInfo{
+        max-width: 60vw;
+    }
+
+    #discoverMain #pictures{
+        max-width: 40vw;
+    }
+
+    #CjInfoSubDiv{
+        display: flex;
+        padding: 2px;
+        justify-content: center;
+        margin: 0;
+        background-color: none;
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+    }
+
+    figure{
+        background-color: #485696;
+        color: #E7E7E7;
+        margin: 10px;
+        border-radius: 25px;
+        padding: 10px;
+        border: #432818 solid 6px;
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.15) inset;
+        min-height: 16vh;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #discoverMain #CjInfo figure #figSubDiv{
+        display: flex;
+        margin:0;
+        padding: 0;
+        background-color: #485696;
+        box-shadow: none;
+        justify-content: center;
+    }
+    
+    figure img{
+        display:inline;
+        border: #432818 solid 6px;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    figure figcaption{
+        display: block;
+    }
+
+    figure a{
+        background-color: #de1630;
+        display: inline;
+        padding: 1px;
+        border-radius: 25px;
+    }
+
+    #discoverMain img{
+        min-width: 100px;
+        max-width: 400px;
+        border-radius: 25px;
+    }
+
+    #discoverMain img:hover{
+        transform: scale(1.3);
+        z-index: 10;
+        box-shadow: 0 0 5rem rgba(0, 0, 0, 0.8);
+    }
 }

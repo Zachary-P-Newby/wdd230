@@ -17,7 +17,7 @@ function getWindChill(temperature, windSpeed){
 
     f = 35.74 + (0.6215 * temperature) - (35.75 * (windSpeed ** 0.16)) + (0.4275 * temperature * (windSpeed ** 0.16));
 
-    return f
+    return Math.round(f * 100) / 100;
 }
 
 let windchill = getWindChill(temperature, windSpeed);
