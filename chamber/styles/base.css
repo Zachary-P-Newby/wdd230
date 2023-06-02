@@ -382,3 +382,7 @@ figure img, figcaption, #figSubDiv{
     box-shadow: none;
     justify-content: center;
 }
+
+#CjInfo section article p a{
+    color: #E7E7E7;
+}
