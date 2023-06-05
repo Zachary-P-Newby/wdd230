@@ -100,4 +100,28 @@
     #discoverMain #pictures img{
         max-height: 200px;
     }
+
+    #statistics #statisticsList{
+        display: none;
+    }
+
+    #statistics #statisticsTable{
+        display: inline-table;
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 3px solid #E7E7E7;
+    }
+    
+    #statistics #statisticsTable th{
+        padding: 2px;
+        text-align: center;
+        border: 2px solid #E7E7E7;
+    }
+    
+    #statistics #statisticsTable td{
+        padding: 2px;
+        text-align: center;
+        border:2px solid #E7E7E7;
+    }
 }
