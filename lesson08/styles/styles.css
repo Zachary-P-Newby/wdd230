@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(33, 33, 125);
+    color: whitesmoke;
+    margin: 0;
+    padding: 5vw;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(33, 33, 125);
+    color: whitesmoke;
+    margin-bottom: 0;
+    box-shadow: 0px -5px rgba(0, 0, 0, 0.5);
+    padding: 8vw;
+}
+
+main{
+    margin: 11vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+}
+
+table{
+    background-color: whitesmoke;
+    border: 5px solid darkslategray;
+    table-layout: fixed;
+    border-collapse: collapse;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+tr{
+    border: 1px solid darkslategray;
+}
+
+td, th{
+    border: 1px solid darkslategray;
+}
+
+#nameRow th{
+    background-color: rgb(30, 195, 140);
+    padding: 5px;
+    color: white;
+}
+
+#labelRow:nth-child(2){
+    background-color: rgb(96, 214, 175);
+}
+
+#labelRow th:nth-child(1){
+    background-color: rgb(30, 195, 140);
+}
+
+#Row1 td{
+    color: rgb(74, 110, 176);
+}
+
+#Row2 td{
+    color: rgb(74, 110, 176);
+}
+
+#Row2{
+    background-color: rgba(33, 33, 125, 0.2);
+}
+
+#Row2 td:nth-child(2){
+    color: rgb(223, 0, 0);
+}
+
+#Row3 td{
+    color: rgb(223, 0, 0);
+}
+
+#Row3 td:nth-child(4){
+    color: rgb(74, 110, 176);
+}
+
+
+
