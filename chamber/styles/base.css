@@ -159,7 +159,7 @@ footer{
     justify-self: center;
 }
 
-footer section{
+footer section, footer div{
     justify-self: center;
     text-align: center;
     border-top:solid 2px rgba(255,255,255,0.5);
@@ -376,9 +376,9 @@ figure img, figcaption, #figSubDiv{
     display: flex;
     padding: 2px;
     margin: 0;
-    background-color: none;
+    background-color: transparent;
     border: none;
-    border-radius: none;
+    border-radius: 0;
     box-shadow: none;
     justify-content: center;
 }
