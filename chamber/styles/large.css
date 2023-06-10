@@ -124,4 +124,31 @@
         text-align: center;
         border:2px solid #E7E7E7;
     }
+    /* Join ------------------------------------------------------------------------------------ */
+
+    #joinMain{
+        display: flex;
+        justify-content: center;
+    }
+
+    #joinMain section{
+        max-width: 45vw;
+        margin: 5vh 5vw;
+        min-width: 32vw;
+    }
+
+    #joinMain form{
+        max-width: 36vw;
+    }
+
+    #seeBelow{
+        display: none;
+    }
+
+    #membershipBenefits img{
+        float: left;
+        max-width: 160px;
+        max-height: 160px;
+        padding-right: 1vw;
+    }
 }

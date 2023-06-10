@@ -129,4 +129,23 @@
         z-index: 10;
         box-shadow: 0 0 5rem rgba(0, 0, 0, 0.8);
     }
+
+    /* Join ------------------------------------------------------------------------------------ */
+
+    #joinMain section{
+        max-width: 45vw;
+        margin: 5vh 5vw;
+        min-width: 32vw;
+    }
+
+    #joinMain form{
+        max-width: 36vw;
+    }
+
+    #membershipBenefits img{
+        float: left;
+        max-width: 130px;
+        max-height: 130px;
+        padding-right: 1vw;
+    }
 }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carl Junction Chamber of Commerce Join Page for Zach Newby's WDD230 Class. Contact us at 417-310-CARL. Join us.">
+    <link href="../normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#485696">
+    <link rel="icon" href="../favicon.ico">
+    <title>CJ Chamber of Commerce Join</title>
+</head>
+
+<body>
+    
+    <header>
+        <section id="banner">
+            <h4>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h4>
+        </section>
+        <section id="headerTop">
+            <a href="index.html" ><img id="headerImg" src="images/CJCC.webp" alt="CJCC Logo"></a>
+            <h1>Carl Junction Chamber of Commerce</h1>
+            
+            <section id="social">
+                <a href="https://www.facebook.com/"><img id="facebook" src="images/facebook.webp" alt="Facebook Logo"></a>
+                <a href="https://www.linkedin.com/"><img id="linkedin" src="images/linkedin.webp" alt="LinkedIn Logo"></a>
+            </section>
+            
+        </section>
+
+        <nav>
+            
+            <button id="navBurger"><span>&#9776;</span><span>&#10006;</span></button>
+            <ul id="navMenu">
+                <li><a href="index.html" >Home</a></li> 
+                <li><a href="discover.html" >Discover</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="index.html" >Placeholder</a></li>
+            </ul>
+        </nav>
+        <section id="dateDisplay">
+            <p><span id="date"></span></p>
+        </section>
+    </header>
+
+<!-- class="block" -->
+<!-- class="radio" -->
+
+    <main id="joinMain">
+
+        <section id="joinSection">
+            <h2>Carl Junction Chamber of Commerce Sign up Form</h2>
+            <form id="joinForm" method="get" action="thankyou.html">
+
+                <fieldset id="personalInfo">
+                    <legend><h3>Personal Information</h3></legend>
+                    <label class="block">Enter your first name:*<input type="text" id="firstNameInput" name="fname" aria-required="true" required autofocus></label>
+
+                    <label class="block">Enter your last name:*<input type="text" id="lastNameInput" name="lname" aria-required="true" required></label>
+
+                    <label class="block">Enter your job title: <input type="text" id="posistion" pattern="[a-zA-Z\-\s]{7,}" name="title" placeholder="ie. Manager"></label>
+
+                    <label class="block">Enter your email:*<input type="email" id="email" aria-placeholder="Example: carlJ@gmail.com" placeholder="carlJ@gmail.com" required aria-required="true"></label>
+
+                    <label class="block">Enter your cell phone number:<input type="tel" id="cell" aria-placeholder="1230984567" placeholder="123-098-4567"></label>
+
+                    <input type="hidden" id="dateAndTime" name="dateAndTime" value="">
+                </fieldset>
+
+                <fieldset id="businessInfo">
+                    <legend><h3>Business Information</h3></legend>
+                    <label>Enter your business name:*<input class="block" type="text" id="businessNameInput" name="businessName" aria-required="true" required></label>
+                    <label>Describe your business:<textarea class="block" id="businessDescription" name="businessDescription" maxlength="2000"></textarea></label>
+                </fieldset>
+
+                <fieldset id="membership">
+                    <legend>
+                        <h3>Choose your membership Level*</h3>
+                        
+                    </legend>
+                    
+                    
+
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="NP"> Non-Profit</label>
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="bronze"> Bronze</label>
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="silver"> Silver</label>
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="gold"> Gold</label>
+                    
+                    <div id="seeBelow"><h4>See below for more info.</h4></div>
+                </fieldset>
+                
+                <h4>* Means Required</h4>
+                
+                <div id="submitBtnDiv">
+                    <input type="submit" id="submitBtn" value="Join the CJCC">
+                </div>
+            </form>
+        </section>
+        
+
+        <section id="membershipBenefits">
+            <h2>Mebership Levels</h2>
+
+            <div>
+                <h3>Bronze</h3>
+                <img src="images/copper.webp">
+                <p>The Bronze level is our lowest membership level costing $15 a month, granting entry to the chamber rewards program, where businesses earn points each week which can be redeemed for prizes. It also includes access to social events like the Christmas dinner and Ice cream social.</p>
+            </div>
+
+            <div>
+                <h3>Silver</h3>
+                <img src="images/iron.webp">
+                <p>The Silver level costs $30 a month, featuring all bronze level benefits and more. Including a 1.5x multiplier in the rewards program, free chamber stationary, access to the febuary pancake breakfast, and access to our monthly continuing education seminar.</p>
+            </div>
+
+            <div>
+                <h3>Gold</h3>
+                <img src="images/gold.webp">
+                <p>Costing $100 a month, the gold membership, features access to all availible benfits. Including all social events, double rewards points, advanced training seminars, free office supplies each month from Ruby Co. warhous, access to the chamber sauna, and timeshare on West Side Island.</p>
+            </div>
+
+            <div>
+                <h3>Non-Profit</h3>
+                <img src="images/Amethyst.webp">
+                <p>Exclusive to Non-Profit organizations, the Non-profit level has no membership fees. It features access to our special Non-profit biannual dinner, up to $100 of supplies free from the Ruby Co. warehouse, and bonus points in our Chamber rewards program. The Non-profit level also includes all Bronze level benefits.</p>
+            </div>
+            
+        </section>
+
+    </main>
+
+
+
+
+    <footer>
+        
+        <section id="contactInfo">
+            <img id="footerImg" src="images/CJCC.webp" alt="CJCC Logo">
+            <h3>Carl Junction Chamber of Commerce</h3>
+            <div>
+                <p>126 Finn Rd. Carl Junction Mo</p>
+                <p>info@carljunct.org</p>
+                <p>417 310-0461</p>
+                <a href="https://www.bing.com/maps?ty=18&q=506+Sunnybrook+Ln%2C+Carl+Junction%2C+MO+64834&satid=id.sid%3A911a7b07-f3ff-4e7b-b8e2-1e62747d7087&ppois=37.15180206298828_-94.54518127441406_506+Sunnybrook+Ln%2C+Carl+Junction%2C+MO+64834_%7E&cp=37.151834%7E-94.523535&lvl=14.0&v=2&sV=1">Directions</a>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>&copy; Zach Newby 2023 .:|:. Carl Junction MO .:|:. </p>
+            <p>Last Updated: <span id="last_mod_date"></span></p>
+        </section>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/joinForm.js"></script>
+</body>
+</html>
