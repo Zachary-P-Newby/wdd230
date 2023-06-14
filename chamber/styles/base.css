@@ -391,6 +391,26 @@ figure img, figcaption, #figSubDiv{
     display: none;
 }
 
+#lastVisitDisplay{
+    background-color: #485696;
+    margin: 0 auto;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    padding: .01%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    border-top: #E7E7E7 1px solid;
+}
+
+#timeSinceLastVisit{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border: solid 2px rgba(255,255,255,0.7);
+    color: #E7E7E7;
+    display: block;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
 
 /* Join ------------------------------------------------------------------------------------ */
 
