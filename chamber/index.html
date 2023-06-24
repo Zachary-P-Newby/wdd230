@@ -73,13 +73,13 @@
                     
                     
                     <div id="weatherSubDiv">
-                        <img alt="windy" src="images/windy.webp">
+                        <img id="weatherImage" alt="weatherImage" src="#">
                     </div>
 
                     <h4><span id="condition"></span></h4>
-                        <h4><span id="temperature"></span>&#8457;</h4>
-                        <h4 id="windSpeedP">Windspeed: <span id="windSpeed"></span></h4>
-                        <h4>Windchill: <span id="windChill"></span></h4>
+                    <h4><span id="temperature"></span>&#8457;</h4>
+                    <h4 id="windSpeedP">Windspeed: <span id="windSpeed"></span>MPH</h4>
+                    <h4>Windchill: <span id="windChill"></span></h4>
                     
                 </figure>
 
@@ -132,10 +132,12 @@
         <div id="copyright">
             <p>&copy; Zach Newby 2023 .:|:. Carl Junction MO .:|:. </p>
             <p>Last Updated: <span id="last_mod_date"></span></p>
+            <p> .:|:. Thank you to Stack Overflow, freecodecamp, and W3schools.</p>
         </div>
+        
     </footer>
 
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

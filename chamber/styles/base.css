@@ -286,11 +286,9 @@ article{
     margin: 0;
     border: #432818 solid 6px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.15) inset;
+    min-height: 20vh;
 }
 
-#weather figure img{
-    max-width: 5rem;
-}
 
 #weather figure h4{
     padding: 0;
@@ -300,10 +298,14 @@ article{
 #weather figure #weatherSubDiv{
     display: flex;
     justify-content: center;
+    
 }
 
 #weather figure #weatherSubDiv img{
     background-color: #E7E7E7;
+    border: #432818 solid 6px;
+    border-radius: 25px;
+    min-width: 5vw;
 }
 
 #windSpeedP::before{
@@ -358,7 +360,7 @@ figure{
     text-align: center;
 }
 
-figure img, figcaption, #figSubDiv{
+#discoverMain figure img, figcaption, #figSubDiv{
     display: none;
     background-color: #485696;
     box-shadow: none;
