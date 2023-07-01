@@ -23,7 +23,7 @@ header{
 
 #banner{
     background-color: #485696;
-    color: #E7E7E7;
+    color: white;
     padding: .5vh;
     text-align: center;
 }
@@ -73,7 +73,7 @@ nav{
 nav ul li a{
     display: none;
     text-decoration: none;
-    color: #E7E7E7;
+    color: white;
     font-size: 1rem;
 }
 
@@ -84,7 +84,7 @@ nav ul li a.active{
 nav ul.open li a{
     display: block;
     text-decoration: none;
-    color: #E7E7E7;
+    color: white;
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
     padding: 1vw;
@@ -96,7 +96,7 @@ nav ul li a:hover{
 
 #navBurger{
     background-color: transparent;
-    color: #E7E7E7;
+    color: white;
     border: none;
     min-height: 5vh;
     min-width: 5vw;
@@ -138,7 +138,7 @@ nav ul li a:hover{
     background-color: rgba(0, 0, 0, 0.2);
     padding: 5px;
     border: solid 2px rgba(255,255,255,0.7);
-    color: #E7E7E7;
+    color: white;
     display: block;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -331,7 +331,7 @@ article{
 }
 
 #discoverMain #CjInfo{
-    color: #E7E7E7;
+    color: white;
     padding: 2vw;
 }
 
@@ -353,7 +353,7 @@ article{
 
 figure{
     background-color: #485696;
-    color: #E7E7E7;
+    color: white;
     margin: 5px;
     padding: 5px;
     border-radius: 25px;
@@ -375,7 +375,7 @@ figure{
 
 .mapLink{
     display: block;
-    color: #E7E7E7;
+    color: white;
     margin: 1vw;
     font-family: 'Noto Sans', sans-serif;
     padding: 2vw;
@@ -398,7 +398,7 @@ figure{
 }
 
 #CjInfo section article p a{
-    color: #E7E7E7;
+    color: white;
 }
 
 #statistics #statisticsTable{
@@ -419,7 +419,7 @@ figure{
     background-color: rgba(0, 0, 0, 0.2);
     padding: 5px;
     border: solid 2px rgba(255,255,255,0.7);
-    color: #E7E7E7;
+    color: white;
     display: block;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -560,7 +560,7 @@ form .sbs input{
 #directoryBar{
     background-color: #432818;
     display: flex;
-    color: #E7E7E7;
+    color: white;
 
     /* max-width: 90vw; */
     text-align: center;
@@ -574,7 +574,7 @@ form .sbs input{
     border: none;
     border-radius: 5px;
     background-color: #de1630;
-    color: #E7E7E7;
+    color: white;
     min-width: 5vw;
     margin: 1vw;
     font-family: 'Noto Sans', sans-serif;
@@ -669,7 +669,7 @@ form .sbs input{
 
 #fullContactInfo div article a{
     background-color: #de1630;
-    color: #E7E7E7;
+    color: white;
     width: 80%;
     border-radius: 25px;
     padding: 1vw;
