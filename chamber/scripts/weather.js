@@ -1,5 +1,5 @@
 /* Cosntants */
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=37.1795&lon=-94.555&appid=17c3be04bdd5b8a448abfd68abc1e93f&units=imperial`;
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=37.1795&lon=-94.555&appid=17c3be04bdd5b8a448abfd68abc1e93f&units=imperial`;
 const weatherIcon = document.getElementById("weatherImage" );
 
 const conditionElement = document.querySelector("#condition");
@@ -12,7 +12,7 @@ const windSpeedElement = document.querySelector("#windSpeed");
 /* Prepare weather Display*/
 async function apiFetch(){
     try{
-        const response = await fetch(url);
+        const response = await fetch(weatherUrl);
         if (response.ok) {
             const data = await response.json();
             console.log(data);

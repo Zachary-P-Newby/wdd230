@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carl Junction Chamber of Commerce Contact page for Zach Newby's WDD230 Class. Contact us at 417-310-CARL. Join us.">
+    <link href="../normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#485696">
+    <link rel="icon" href="../favicon.ico">
+    <title>CJ Chamber of Commerce Contact page</title>
+</head>
+<body>
+    
+    <header>
+        <section id="banner">
+            <h4>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h4>
+        </section>
+        <section id="headerTop">
+            <a href="index.html" ><img id="headerImg" src="images/CJCC.webp" alt="CJCC Logo"></a>
+            <h1>Carl Junction Chamber of Commerce</h1>
+            
+            <div id="social">
+                <a href="https://www.facebook.com/"><img id="facebook" src="images/facebook.webp" alt="Facebook Logo"></a>
+                <a href="https://www.linkedin.com/"><img id="linkedin" src="images/linkedin.webp" alt="LinkedIn Logo"></a>
+            </div>
+            
+        </section>
+
+        <nav>
+            
+            <button id="navBurger"><span>&#9776;</span><span>&#10006;</span></button>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="discover.html" >Discover</a></li>
+                <li><a href="join.html" >Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+        <div id="dateDisplay">
+            <p><span id="date"></span></p>
+        </div>
+    </header>
+
+
+
+    <main id="contactMain">
+
+       <div id="contactDiv">
+
+        <section id="contactSection">
+            <form id="contactForm" method="get" action="contactthankyou.html">
+                <fieldset>
+                
+                    <legend><h2>Contact Us</h2></legend>
+                    <label class="block">First Name:*<input type="text" required autofocus name="fname"></label>
+                    <label class="block">Last Name:*<input type="text"required name="lname"></label>
+                    <label class="block">Organization or Business:*<input type="text"required name="businessName"></label>
+                    <label class="block">Enter your email:*<input type="email" id="email" placeholder="carlJ@gmail.com" required aria-required="true" required></label>
+                    <label class="block">Enter your cell phone number:<input type="tel" id="cell" placeholder="123-098-4567"></label>
+                    <label class="block">Membership ID: (If Applicable) <input name="membershipID"></label>
+                    <label>Message:*<textarea class="block" id="contactMessage" name="contactMessage" maxlength="2000" required></textarea></label>
+    
+                    <div id="submitBtnDiv">
+                        <input type="submit" class="submitBtn" value="Send Message">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="fullContactInfo">
+            <h2>Contact Information</h2>
+            <div>
+                <article>
+                    <p>126 Finn Rd. Carl Junction MO</p>
+                    <p>Phone: (417) 310-0461</p>
+                    <p>Email: <a href="contactthankyou.html">CJCC@zmail.com</a></p>
+                </article>
+                
+                <figure class="mapFigure">
+                    <a class="mapLink" href="https://www.google.com/maps/place/Carl+Junction,+MO/@37.1704716,-94.5714997,13.26z/data=!4m6!3m5!1s0x87c879cb199213fb:0xd948ed4e22277182!8m2!3d37.1767249!4d-94.5655066!16zL20vMHd3Z3A?entry=ttu">City Map</a>
+                    <div class="figSubDiv">
+                        <img class="mapImage" src="images/CJ_Map.webp" loading="lazy" alt="Carl Junction Map">
+                        
+                    </div>
+                    <figcaption>Image from Google Maps</figcaption>
+                </figure>
+            
+            </div>
+        </section>
+
+       </div>
+
+    </main>
+
+
+
+    <footer>
+        
+        <section id="contactInfo">
+            <img id="footerImg" src="images/CJCC.webp" alt="CJCC Logo">
+            <h3>Carl Junction Chamber of Commerce</h3>
+            <div>
+                <p>126 Finn Rd. Carl Junction MO</p>
+                <a href="contact.html">Contact Us</a>
+                <p>417 310-0461</p>
+                <a href="https://www.bing.com/maps?ty=18&q=506+Sunnybrook+Ln%2C+Carl+Junction%2C+MO+64834&satid=id.sid%3A911a7b07-f3ff-4e7b-b8e2-1e62747d7087&ppois=37.15180206298828_-94.54518127441406_506+Sunnybrook+Ln%2C+Carl+Junction%2C+MO+64834_%7E&cp=37.151834%7E-94.523535&lvl=14.0&v=2&sV=1">Directions &#10547;</a>
+            </div>
+        </section>
+        <div id="copyright">
+            <p>&copy; Zach Newby 2023 .:|:. Carl Junction MO .:|:. </p>
+            <p>Last Updated: <span id="last_mod_date"></span></p>
+            <p>.:|:. Thank you to Stack Overflow, MDN web docs, freecodecamp, and W3schools.</p>
+        </div>
+        
+    </footer>
+
+    <script src="scripts/homepage.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>

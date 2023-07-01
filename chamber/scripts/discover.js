@@ -1,6 +1,6 @@
 function dayCount(date){
     let year = date.getFullYear() * 365;
-    let rawMonth = date.getMonth() +1;
+    let rawMonth = date.getMonth()+1;
 
     if (rawMonth == 2){
         let month = 28;
@@ -34,7 +34,7 @@ function LastVisit(){
         
         let difference = dayCount(currentDate) - dayCount(prevVisit);
 
-        let formattedPrevDate = `${months[prevVisit.getMonth() + 1]}, ${prevVisit.getDay()}th, ${prevVisit.getFullYear()}`
+        let formattedPrevDate = `${months[prevVisit.getMonth()]}, ${prevVisit.getDate()}th, ${prevVisit.getFullYear()}`
 
         document.getElementById("timeSinceLastVisit").textContent = `You last visited on ${formattedPrevDate}. It has been ${difference} days since your last visit.`;
 

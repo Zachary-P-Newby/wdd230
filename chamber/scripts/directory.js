@@ -13,8 +13,6 @@ async function getBusinessData() {
     const response = await fetch(url);
     const data = await response.json();
     
-    console.table(data);  // note that we reference the prophet array of the data object given the structure of the json file
-    
     let businesses = data;
 /* Create card and list elements */
     businesses.forEach((business) => {
@@ -81,9 +79,28 @@ listButton.onclick = function(){ShowList()};
 
 /* Not gonna lie, I reused code from the learning activity */
 
+let currentDate = new Date;
+let weekDay = currentDate.getDay();
+let month = currentDate.getMonth();
+
+let week = Array(null, "Monday", "Tuesday","Wednesday","Thursday", "Friday", "Saturday", "Sunday");
+
+let months = Array("January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+document.getElementById("date").textContent = `${week[weekDay]}, ${currentDate.getDate()} ${months[month]} ${currentDate.getFullYear()}`;
+
+let banner = document.querySelector("#banner");
+if (weekDay  == 1 || weekDay == 2){
+    banner.style.display = "block";
+}
+else{
+    banner.style.display = "none";
+}
 
 
+let lastmod = document.lastModified;
 
+document.getElementById("last_mod_date").innerHTML = lastmod;
 
 
 /* function displayBusinessCards(businesses){
