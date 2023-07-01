@@ -97,10 +97,3 @@ document.getElementById("last_mod_date").innerHTML = lastmod;
 
 /* Function Calls */
 getBusinessData();
-
-/* 
-
- */
-
-        /* let item= document.createElement("li");
-        item.innerHTML = `<strong>${business.name}</strong> | Address: ${business.address} | Membership: ${business.level} `;*/

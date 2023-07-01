@@ -1,3 +1,15 @@
+/* Const Variables */
+const hamburger = document.getElementById("navBurger");
+
+/* Nav Menu ------------------------------------------------------------ */
+function toggleMenu (){
+    document.getElementById("navBurger").classList.toggle("open");
+    document.getElementById("navMenu").classList.toggle("open");
+}
+hamburger.onclick = toggleMenu;
+
+
+/* ------------------------------------------- */
 let showCards = true;
 
 const cardsButton = document.getElementById("cardsButton");
