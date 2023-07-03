@@ -44,6 +44,4 @@ function LastVisit(){
 
 
 
-console.log(localStorage.getItem("prevVisit"));
-
 LastVisit();

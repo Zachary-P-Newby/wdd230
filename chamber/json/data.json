@@ -2,28 +2,28 @@
     "name": "Valued Keys Lock Smithy",
     "address": "515 Canolo Rd.",
     "level": "Bronze",
-    "image": "images/valuedKeys.png"
+    "image": "images/valued_keys.png"
 },
 
 {
     "name": "Django Plumbing",
     "address": "415 Italy St.",
     "level": "Silver",
-    "image": "images/djangoPlumbing.png"
+    "image": "images/django_plumbing.png"
 },
 
 {
     "name": "Numbat Cafe",
     "address": "223 Opossom Dr.",
     "level": "Silver",
-    "image": "images/numbatCafe.png"
+    "image": "images/numbat_cafe.png"
 },
 
 {
     "name": "Boulder Lanes Bowling Alley",
     "address": "787 Granite Ln.",
     "level": "Gold",
-    "image": "images/boulderBowling.png"
+    "image": "images/boulder_bowling.png"
 },
 
 {
@@ -37,7 +37,7 @@
     "name": "Snoog Mart",
     "address": "6 Barley Dr.",
     "level": "Silver",
-    "image": "images/snoogMart.png"
+    "image": "images/snoog_mart.png"
 },
 
 {
@@ -51,34 +51,34 @@
     "name": "Zach. Co Industries",
     "address": "126 Zach St.",
     "level": "Gold",
-    "image": "images/zachCo.png"
+    "image": "images/zach_co.png"
 },
 
 {
     "name": "Yellowstone Vision Care",
     "address": "506 Antares Rd.",
     "level": "Gold",
-    "image": "images/yellowstoneVisionCare.png"
+    "image": "images/yellowstone_vision_care.png"
 },
 
 {
     "name": "Bulldog Golf Course",
     "address": "12 Driver Dr.",
     "level": "Bronze",
-    "image": "images/bulldogGolfCourse.png"
+    "image": "images/bulldog_golf_course.png"
 },
 
 {
     "name": "Newby Construction Company",
     "address": "518 Antares Rd.",
     "level": "Gold",
-    "image": "images/NCC.png"
+    "image": "images/ncc.png"
 },
 
 {
     "name": "Crisis Cleanup Satellite Office",
     "address": "517 Antares Rd.",
     "level": "Non-Profit",
-    "image": "images/crisisMessUp.png"
+    "image": "images/crisis_mess_up.png"
 }
 ]
