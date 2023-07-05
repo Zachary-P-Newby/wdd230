@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lilita+One&display=swap');
+
+body{
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: #01baef;
+    
+}
+
+p{
+    font-family: "Arvo", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3a2e39;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Lilita One", Arial, Helvetica, sans-serif;
+    color: #3a2e39;
+}
+
+header, footer{
+    background-color: #20bf55;
+    border: solid .5rem #da4167;
+    border-radius: 25px;
+    color: #3a2e39;
+    text-align: center;
+}
+
+img{
+    max-width: 70vw;
+    border: #01baef solid 3px;
+}
+
+div{
+    background-color: #fdf7fa;
+    border: #da4167 solid 5px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    padding: 2rem;
+    margin: 1rem;
+}
+
+table{
+    border: #000 solid 1px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+table tr, th, td{
+    border: #000 solid 1px;
+    padding: .5rem;
+    font-family: "Arvo", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.Primary{
+    color: #20bf55;
+}
+
+.Relief{
+    background-color: #101010;
+    color: #fdf7fa;
+}
+
+.Accent1{
+    color: #da4167;
+}
+
+.Text{
+    color: #3a2e39;
+}
+
+.Accent2{
+    color: #01baef;
+}
+
+#_Primary{
+    background-color: #20bf55;
+}
+
+#_Relief{
+    background-color: #fdf7fa;
+}
+
+#_Accent1{
+    background-color: #da4167;
+}
+
+#_Text{
+    background-color: #3a2e39;
+    color: #fdf7fa;
+}
+
+#_Accent2{
+    background-color: #01baef;
+}
+
+#loom-companion-mv3{
+    display: none;
+}
+
+.wireframe{
+    max-width: 30vw;
+}
