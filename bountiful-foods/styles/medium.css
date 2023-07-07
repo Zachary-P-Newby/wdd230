@@ -1,0 +1,33 @@
+@media only screen and (min-width: 32rem){
+
+    /* Header */
+
+    header h1{
+        font-size: 5rem;
+    }
+
+
+
+
+    /* Footer */
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer div{
+        text-align: center;
+    }
+
+    #social{
+        margin: auto 0;
+    }
+
+    #author-info{
+        border-top: 0;
+        border-bottom: 0;
+        border-left: solid 2px rgba(0, 0, 0, 0.1);
+        border-right: solid 2px rgba(0, 0, 0, 0.1);
+    }
+
+}

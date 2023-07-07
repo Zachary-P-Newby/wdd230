@@ -1,1 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lilita+One&display=swap');
+/*Colors:  #20bf55, #fdf7fa, #3a2e39, #da4167 #01baef*/
+
+body{
+    background-color: #fdf7fa;
+    font-size: 16px;
+    margin: 0;
+    max-width: 100vw;
+}
+
+p, tr, td{
+    font-family: "Arvo", Arial, Helvetica, sans-serif;
+    color: #3a2e39;
+}
+
+a{
+    font-family: "Arvo", Arial, Helvetica, sans-serif;
+    color: #fdf7fa;
+}
+
+a:hover{
+    color: #da4167;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Lilita One", Arial, Helvetica, sans-serif;
+    color: #fdf7fa;
+}
+
+/* Header*/
+header{
+    background-color: #20bf55;
+    border-bottom: #da4167 solid 1rem;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: center;
+}
+
+#header-sub-div{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-bottom: .5rem;
+}
+
+#logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+h1{
+    font-size: 3rem;
+    margin: auto;
+}
+
+nav{
+    
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 10vh;
+    margin-bottom: .5rem ;
+}
+
+nav a{
+    background-color: #01baef;
+    border-radius: 25px;
+    padding: .5rem;
+    border: #fdf7fa solid .5rem;
+    min-width: 20vw;
+}
+
+nav a:hover{
+    border: #da4167 solid .5rem;
+    background-color: #fdf7fa;
+}
+
+/* Footer */
+
+footer{
+    background-color: #20bf55;
+    border-bottom: #da4167 solid 1rem;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: block;
+}
+
+footer div{
+    padding: 1vw;
+    margin: .5vw;
+    text-align: center;
+}
+
+#social{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#social img{
+    max-width: 3rem;
+    margin: .5rem;
+    border: #fdf7fa 5px solid;
+    background-color: #fdf7fa;
+    border-radius: 25px;
+}
+
+#social img:hover{
+    border: #da4167 5px solid;
+}
+
+#author-info{
+    border-top: solid 2px rgba(0, 0, 0, 0.1);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/*Homepage Main */
