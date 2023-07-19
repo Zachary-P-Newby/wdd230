@@ -1,4 +1,6 @@
 @media only screen and (min-width: 64rem){
+
+
     /* Header */
 
     #logo{
@@ -19,6 +21,13 @@
         justify-content: space-evenly;
     }
 
+    #author-info{
+        border-top: 0;
+        border-bottom: 0;
+        border-left: solid 2px rgba(0, 0, 0, 0.1);
+        border-right: solid 2px rgba(0, 0, 0, 0.1);
+    }
+
     #area-info{
         display: flex;
         flex-direction: column;
@@ -31,16 +40,26 @@
     #homepage-main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 1rem;
         margin: 0 1rem;
     }
+
+    #homepage-main section{
+        max-height: 50vh;
+        overflow-y: auto;
+    }
+
+    #homepage-main section::-webkit-scrollbar {
+        width: 0;
+        background-color: transparent;
+      }
 
     #call-to-action{
         grid-column: 2/5;
         grid-row: 2/3;
         width: 40vw;
-        max-height: 20vh;
+        max-height: 15vh;
     }
 
     #call-to-action a{
@@ -53,7 +72,7 @@
 
     #weather-widget{
         grid-column: 5/6;
-        grid-row: 1/4;
+        grid-row: 1/3;
         display: block;
         max-width: 20vw;
     }
@@ -72,18 +91,25 @@
     }
 
     #three-day-forecast{
-        display: block
+        display: block;
+        max-height: 20vh;
+        overflow: scroll;
     }
 
 
     #area-info{
         grid-column: 1/2;
-        grid-row: 1/4;
+        grid-row: 1/3;
         max-width: 20vw;
+        display: block;
     }
 
     #area-dropdown{
         display: none;
+    }
+    
+    #info{
+        align-content: center;
     }
 
     #info p{
