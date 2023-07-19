@@ -5,31 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bountiful Foods Homepage. Bountiful Foods is a food service company located in Carlsbad California that is dedicated to providing convient access to helathy, organic, and both exotic and locally grown produce.">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="../normalize.css" rel="stylesheet">
     <link href="styles/small.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">
     <meta name="theme-color" content="#20bf55">
-    <link rel="icon" href="">
+    <link rel="icon" href="bountiful-favicon.ico">
     <title>Bountiful Foods</title>
 </head>
 <body>
+
+    <div id="hero-div">
+        <picture id="hero">
+            <source media="(min-width:1024px)" srcset="images/bountiful-foods-hero-large.webp" alt="bountiful-hero">
+            <source media="(min-width:512px) and (max-width:1023px)" srcset="images/bountiful-foods-hero-medium.webp" alt="bountiful-hero">
+            <img src="images/bountiful-foods-hero-small.webp" alt="bountiful-hero">
+        </picture>
+    </div>
+    
     <header>
 
         <div id="header-sub-div">
-            <a href="home.html"><img id="logo" src="images/placeholder-square.png" alt="Bountiful Logo" width="200", height="200"></a>
+            <a href="home.html"><img id="logo" src="images/bountiful-foods-logo.webp" alt="Bountiful Logo"></a>
             
             <h1>Bountiful Foods</h1>
         </div>
         
         <nav id="navigation">
-            <a href="home.html">Home</a>
+            <a class="active" href="home.html">Home</a>
             <a href="fresh.html">Fresh</a>
             <a href="about.html">About</a>
         </nav>
         
     </header>
+    
+    <main id="homepage-main">
 
-    <main></main>
+            <section id="call-to-action">
+                <a href="fresh.html"> <h3>Order a Drink</h3> </a>
+                <div id="drink-counter">
+                    <p>Drinks You've Ordered:</p>
+                    <strong><span id="drink-count"></span></strong>
+                </div>
+            </section>
+
+            <section id="weather-widget">
+                <h2>Carlsbad Weather</h2>
+                <article id="weather-box">
+                    <h3>Current Conditions</h3>
+                    <h4><span id="weather-conditions"></span></h4>
+                    <img id="weather-img", alt="current-weather", src="#">
+                    <span id="weather-description"></span>
+                    <p><span id="temprature"></span>&#8457;</p>
+                    <span id="humidity"></span>
+                    <span id="weather-description"></span>
+                </article>
+
+
+                <article id="threedayforecast">
+                    <h3>3-day Forecast</h3>
+                    <div id="day1">
+                        <h4><span id="tomorrow"></span></h4>
+                        <img id="day1Img">
+                        <h4><span id="day1Conditions"></span></h4>
+                        <p><span id="day1Temp"></span>&#8457;</p>
+                    </div>
+                    <div id="day2">
+                        <h4><span id="overmorrow"></span></h4>
+                        <img id="day2Img">
+                        <h4><span id="day2Conditions"></span></h4>
+                        <p><span id="day2Temp"></span>&#8457;</p>
+                    </div>
+                    <div id="day3">
+                        <h4><span id="next-day"></span></h4>
+                        <img id="day3Img">
+                        <h4><span id="day3Conditions"></span></h4>
+                        <p><span id="day3Temp"></span>&#8457;</p>
+                    </div>
+                </article>
+            </section>
+
+            <section id="area-info">
+                <h2>Local Areas:</h2>
+                <div id="area-dropdown">
+                    <button id="area-btn"><span id="area-btn-span"></span></button>
+                    <ul id="area-btn-list">
+                        <li> <button class ="area-selector-btn" id="carlsbad-btn">Carlsbad</button> </li>
+                        <li> <button class ="area-selector-btn" id="oceanside-btn" >Oceanside</button></li>
+                        <li> <button class ="area-selector-btn" id="encinitas-btn" >Encinitas</button></li>
+                        <li> <button class ="area-selector-btn" id="solana-btn" >Solana Beach</button></li>
+                        <li> <button class ="area-selector-btn" id="santa-barbra-btn" >Santa Barbra</button> </li>
+                    </ul>
+                </div>
+                <div id="info">
+                    <p id="carlsbad-info">Carlsbad is a beutiful city on the coast of California, home to Bountiful Foods Headquarters, Legoland California, and Leo Carillo Ranch Historical Park. It features a prominent golf-manufaturing industry, earning it the nickname the "Titanium Valley".</p>
+                    <p id="oceanside-info" >Just North of Carlsbad, Oceanside is surrounded by exciting opportunities for family fun- Camp Pendleton, multiple golf courses, and of course the Ocean itself. You can't go wrong in Oceanside.</p>
+                    <p id="encinitas-info" >Looking for beaches? Encinitas has got them in spades, Swami Beach, Cardiff State Beach, Moonlight State Beach, and more!  Not to mention the San-Diego Botanic Garden and the Batiquitos Lagoon State Marine Conservation Area and Bountiful Foods food trucks.</p>
+                    <p id="solana-info">Solana Beach is a historic coastal community, featuring the neighborhood of La Colonia de Eden Gardens, and the first city in continental US to enact a smoking ban on public beachs.</p>
+                    <p id="santa-barbra-info">The setting of hit crime-comedy <i>Psych</i>, Santa Barbra is in fact a beutiful city and not the murder capital of California. </p>
+                </div>
+            </section>
+
+        
+    </main>
 
     <footer>
 
@@ -41,16 +119,18 @@
 
         <div id="author-info">
             <p>&copy; Zach Newby 2023 .:|:. Carl Junction MO .:|:. </p>
-            <a href="attributions.html">Attributions</a>
-            <p>Last Updated: <span id=last-update></span></p>
+            <a id="attributions-link" href="attributions.html">Attributions</a>
+            <p>Last Modified: <span id=last-update></span></p>
         </div>
 
         <div id="address">
-            <p>Head Office: 1247 Poop Street Carlsbad, CA</p>
+            <p>Head Office: 1247 Wren Street Carlsbad, CA</p>
             <p>Hours: Mon-Fri: 9AM - 5PM | Sat: 9AM-3PM | Closed Sundays</p>
-            <p>Directions: <a href="https://www.google.com/maps/place/Auckland+Island+%2F+Motu+Maha/@-50.6837352,165.4537849,10z/data=!3m1!4b1!4m12!1m5!3m4!2zMzfCsDA5JzA2LjQiTiA5NMKwMzInNDMuMSJX!8m2!3d37.1517855!4d-94.5453048!3m5!1s0xa9b36ff135215f65:0xb1ae662821ea0030!8m2!3d-50.7446743!4d166.0563795!16zL20vMDJsOHM3?entry=ttu">Bountiful Foods HQ</a> </p>
+            <p>Directions: <a id="map-link" href="https://www.google.com/maps/place/Auckland+Island+%2F+Motu+Maha/@-50.6837352,165.4537849,10z/data=!3m1!4b1!4m12!1m5!3m4!2zMzfCsDA5JzA2LjQiTiA5NMKwMzInNDMuMSJX!8m2!3d37.1517855!4d-94.5453048!3m5!1s0xa9b36ff135215f65:0xb1ae662821ea0030!8m2!3d-50.7446743!4d166.0563795!16zL20vMDJsOHM3?entry=ttu">Bountiful Foods HQ</a> </p>
         </div>
     </footer>
 
+    <script src="scripts/homepage.js"></script>
+    <script src="scripts/lastmod.js"></script>
 </body>
 </html>

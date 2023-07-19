@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods Fresh Page. Bountiful Foods is a food service company located in Carlsbad California that is dedicated to providing convient access to helathy, organic, and both exotic and locally grown produce.">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="../normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <meta name="theme-color" content="#20bf55">
+    <link rel="icon" href="bountiful-favicon.ico">
+    <title>Bountiful Foods Fresh</title>
+</head>
+
+<body>
+
+    <div id="hero-div">
+        <picture id="hero">
+            <source media="(min-width:1024px)" srcset="images/bountiful-foods-hero-large.webp" alt="bountiful-hero">
+            <source media="(min-width:512px) and (max-width:1023px)" srcset="images/bountiful-foods-hero-medium.webp" alt="bountiful-hero">
+            <img src="images/bountiful-foods-hero-small.webp" alt="bountiful-hero">
+        </picture>
+    </div>
+
+    <header>
+
+
+        <div id="header-sub-div">
+            <a href="home.html"><img id="logo" src="images/bountiful-foods-logo.webp" alt="Bountiful Logo" width="200", height="200"></a>
+            
+            <h1>Bountiful Foods</h1>
+        </div>
+        
+        <nav id="navigation">
+            <a href="home.html">Home</a>
+            <a class="active" href="fresh.html">Fresh</a>
+            <a href="about.html">About</a>
+        </nav>
+        
+    </header>
+
+
+    <main id="fresh-main">
+
+        <section id="drink-order">
+            <h2>Order Your Drink:</h2>
+            <!-- onsubmit="submitForm(this)" preventDefault -->
+
+            <form id="drink-form">
+                <fieldset id="customer-info">
+                    <legend>Customer Information:</legend>
+                    <label><input id="name" type="text" name="fname" autocomplete="name" required autofocus aria-required="true" placeholder="First Name">*</label>
+                    <label><input id="email" type="email" autocomplete="email" name="email" required aria-required="true" placeholder="somebody@provider.com">*</label>
+                    <label><input id="phone" type="tel" name="phone" autocomplete="tel" pattern="[0-9\-\s\(\)]{10,}" aria-required="true" placeholder="(***) *** - ****">*</label>                 
+                </fieldset>
+
+                <fieldset id="drink-instructions">
+                    <legend>Drink Ingredients:</legend>
+                    <p>Select three ingredients.</p>
+                    
+                    <label>
+                        <select name="ingredient-selector1" id="ingredient-selector1" required>
+                            <option value="">Please Select a Fruit:</option>
+
+                        </select>
+                    </label>
+
+                    <label>
+                        <select name="ingredient-selector2" id="ingredient-selector2" required>
+                            <option value="">Please Select a Fruit:</option>
+
+                        </select>
+                    </label>
+
+                    <label>
+                        <select name="ingredient-selector3" id="ingredient-selector3" required>
+                            <option value="">Please Select a Fruit:</option>
+
+                        </select>
+                    </label>
+ 
+                </fieldset>
+
+                <fieldset>
+                    <legend>Special Instructions</legend>
+                    <label><textarea id="special-instructions" name="special-instructions" placeholder="Special instructions"></textarea></label>
+                </fieldset>
+
+                <div id="submit-btn-div">
+                    <input type="submit" id="submit-btn" class="submitBtn" value="Order">
+                </div>
+            </form>
+
+        </section>
+
+        <section id="order-message-box">
+            
+        </section>
+
+
+    </main>
+
+
+
+
+
+
+    <footer>
+
+        <div id="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Facebook Logo"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.webp" alt="Twitter Logo"></a>
+            <a href="https://www.instagram.com/zpnewby/"><img src="images/instagram.webp" alt="Instagram Logo"></a>
+        </div>
+
+        <div id="author-info">
+            <p>&copy; Zach Newby 2023 .:|:. Carl Junction MO .:|:. </p>
+            <a id="attributions-link" href="attributions.html">Attributions</a>
+            <p>Last Updated: <span id=last-update></span></p>
+        </div>
+
+        <div id="address">
+            <p>Head Office: 1247 Wren Street Carlsbad, CA</p>
+            <p>Hours: Mon-Fri: 9AM - 5PM | Sat: 9AM-3PM | Closed Sundays</p>
+            <p>Directions: <a id="map-link" href="https://www.google.com/maps/place/Auckland+Island+%2F+Motu+Maha/@-50.6837352,165.4537849,10z/data=!3m1!4b1!4m12!1m5!3m4!2zMzfCsDA5JzA2LjQiTiA5NMKwMzInNDMuMSJX!8m2!3d37.1517855!4d-94.5453048!3m5!1s0xa9b36ff135215f65:0xb1ae662821ea0030!8m2!3d-50.7446743!4d166.0563795!16zL20vMDJsOHM3?entry=ttu">Bountiful Foods HQ</a> </p>
+        </div>
+    </footer>
+
+    <script src="scripts/drinks.js"></script>
+    <script src="scripts/lastmod.js"></script>
+</body>
+</html>

@@ -2,18 +2,19 @@
 /*Colors:  #20bf55, #fdf7fa, #3a2e39, #da4167 #01baef*/
 
 body{
-    background-color: #fdf7fa;
+    background-color: antiquewhite;
     font-size: 16px;
     margin: 0;
-    max-width: 100vw;
+    padding: 0;
+    width: 100vw;
 }
 
-p, tr, td{
+p, tr, td, span, button, h4, h5, h6{
     font-family: "Arvo", Arial, Helvetica, sans-serif;
     color: #3a2e39;
 }
 
-a{
+a, li{
     font-family: "Arvo", Arial, Helvetica, sans-serif;
     color: #fdf7fa;
 }
@@ -22,9 +23,10 @@ a:hover{
     color: #da4167;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3{
     font-family: "Lilita One", Arial, Helvetica, sans-serif;
     color: #fdf7fa;
+    margin: .6vh auto;
 }
 
 /* Header*/
@@ -34,6 +36,10 @@ header{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     text-align: center;
+    z-index: 5;
+    box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    position: sticky;
 }
 
 #header-sub-div{
@@ -46,10 +52,15 @@ header{
 #logo{
     width: 5rem;
     height: 5rem;
+    margin: 1vh;
+}
+
+#logo:hover{
+    transform: scale(1.2);
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2rem;
     margin: auto;
 }
 
@@ -59,6 +70,7 @@ nav{
     justify-content: space-evenly;
     max-height: 10vh;
     margin-bottom: .5rem ;
+    max-width: 100vw;
 }
 
 nav a{
@@ -67,6 +79,11 @@ nav a{
     padding: .5rem;
     border: #fdf7fa solid .5rem;
     min-width: 20vw;
+    margin: 0;
+}
+
+nav a.active{
+    background-color: #3a2e39;
 }
 
 nav a:hover{
@@ -78,16 +95,23 @@ nav a:hover{
 
 footer{
     background-color: #20bf55;
-    border-bottom: #da4167 solid 1rem;
+    border-top: #da4167 solid 1rem;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     display: block;
+    margin-top: 0;
+    max-width: 100%;
 }
 
 footer div{
     padding: 1vw;
-    margin: .5vw;
+    margin: .5vw 0;
     text-align: center;
+}
+
+#address{
+    margin-top: .5vw;
+    margin-bottom: 0;
 }
 
 #social{
@@ -115,5 +139,339 @@ footer div{
     border-bottom: solid 2px rgba(0, 0, 0, 0.1);
 }
 
+#attributions-link{
+    background-color: #3a2e39;
+    border-radius: 25px;
+    padding: 1vh 1vw;
+}
+
+#attributions-link:hover{
+    background-color: #fdf7fa;
+    
+}
+
+#map-link{
+    background-color: #3a2e39;
+    border-radius: 25px;
+    padding: 1vh 1vw;
+}
+
+#map-link:hover{
+    background-color: #fdf7fa;
+}
+
+
+/* Hero */
+#hero-div{
+    padding: 0;
+    margin: 0;
+}
+
+#hero{
+    z-index: -5;
+    margin: 0;
+    position: fixed;
+}
+
+#hero img{
+    border: none;
+    overflow: hidden;
+}
+
 
 /*Homepage Main */
+
+#homepage-main{
+    min-height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+section{
+    background-color: #3a2e39;
+    padding: 1rem;
+    box-shadow: 5px 5px #fdf7fa;
+    margin: 5vh auto;
+    border-radius: 5px;
+    width: 75vw;
+}
+
+#call-to-action{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+}
+
+#call-to-action a{
+    margin: auto;
+    font-size: 2rem;
+    background-color: #20bf55;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 5px 5px #fdf7fa;
+}
+
+#call-to-action a:hover{
+    background-color: #fdf7fa;
+    color: #da4167;
+    box-shadow: 5px 5px #da4167;
+}
+
+#call-to-action a h3{
+    color: inherit;
+}
+
+#drink-counter{
+    background-color: #fdf7fa;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px #da4167;
+}
+
+
+#weather-widget{
+    display: block;
+}
+
+#weather-widget article{
+    background-color: #01baef;
+    border-radius: 5px;
+    margin: 2vh auto;
+    box-shadow: 5px 5px #fdf7fa;
+}
+
+#weather-widget article h3{
+    color: #3a2e39;
+    
+}
+
+#weather-widget article h4{
+    margin: .5vh 0;
+    
+}
+
+#weather-box{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 1vh;
+}
+
+#weather-widget article img{
+    margin: auto;
+    width: 4rem;
+}
+
+#threedayforecast{
+    display: block;
+    padding: 1vh;
+}
+
+#threedayforecast div{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#threedayforecast h3{
+    grid-column: 1/4;
+}
+
+#day2{
+    border-top:#fdf7fa 1px solid ;
+    border-bottom:#fdf7fa 1px solid ;
+}
+
+
+#area-info{
+    max-width: 100%;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#area-btn-list{
+    list-style-type: none;
+    padding: 0px;
+    
+    display: block;
+}
+
+#area-btn{
+    background-color: #01baef;
+    padding: 1vh 1vw;
+    border-radius: 25px;
+    color: #3a2e39;
+    width: 100%;
+}
+
+#area-btn-span{
+    color: inherit;
+}
+
+#area-btn:hover{
+    background-color: #fdf7fa;;
+    color: #01baef ;
+}
+
+#area-btn-list .area-selector-btn{
+    background-color: antiquewhite;
+    
+    padding: 1vh 1vw;
+    border-radius: 25px;
+    display: none;
+    margin: .5vh auto;
+    width: 100%;
+}
+
+#area-btn-list.open .area-selector-btn{
+    display: block;
+}
+
+
+#area-btn-list .area-selector-btn:hover{
+    background-color: #3a2e39;
+    color: antiquewhite;
+}
+
+
+#info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #fdf7fa;
+    padding: .5vh .5vw;
+    box-shadow: 5px 5px #20bf55;
+    border-radius: 5px;
+}
+
+#info p{
+    display: none;
+    max-width: 100%;
+    text-align: left;
+}
+
+#info #carlsbad-info{
+    display: inline;
+    
+}
+
+
+
+/* fresh */
+
+#fresh-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* #fresh-main section{
+    background-color: #3a2e39;
+    color: #fdf7fa;
+    box-shadow: 5px 5px#fdf7fa;
+} */
+
+
+#drink-form{
+    background-color: #fdf7fa;
+}
+
+fieldset{
+    
+    border: #da4167 solid 5px;
+    margin: 2vh auto;
+    display: block;
+}
+
+label, input, select, textarea{
+    display: block;
+    min-height: 4vh;
+}
+
+#order-message-box{
+    padding: 2vh 2vw;
+    margin: 2vh 2vw;
+}
+
+#order-message-box li{
+    color:#3a2e39;
+}
+
+
+
+
+
+/* ABout */
+
+#about-main section{
+    background-color: #3a2e39;
+    border-radius: 5px;
+    border: #fdf7fa solid 5px;
+    margin: 5vh auto;
+    max-width: 70%;
+    padding: 3vh 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#about-main section p{
+    background-color: #fdf7fa;
+    padding: 1vw;
+    border-radius: 5px;
+    box-shadow: 5px -5px #20bf55;
+}
+
+#carlsbad-map{
+    max-width: 30vw;
+}
+
+#carlsbad-map:hover{
+    transform: scale(1.2);
+    z-index: 10;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.8);
+    
+}
+
+
+/* attributions */
+
+#attributions-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#attributions-section{
+    display: flex;
+    justify-content: center;
+    margin: 10vh auto;
+    max-width: 90vw;
+}
+
+#attributions{
+    background-color: #3a2e39;
+    padding: 20px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+#attributions h2{
+    text-decoration: underline;
+}
+
+#attributions ul{
+    color: #fdf7fa;
+}

@@ -5,20 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Bountiful Foods Attributions Page. Bountiful Foods is a food service company located in Carlsbad California that is dedicated to providing convient access to helathy, organic, and both exotic and locally grown produce.">
         <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Lilita+One&display=swap" rel="stylesheet">
+        <link href="../normalize.css" rel="stylesheet">
         <link href="styles/small.css" rel="stylesheet">
         <link href="styles/medium.css" rel="stylesheet">
         <link href="styles/large.css" rel="stylesheet">
-
-
         <meta name="theme-color" content="#20bf55">
-        <link rel="icon" href="">
+        <link rel="icon" href="bountiful-favicon.ico">
         <title>Bountiful Foods Attributions Page</title>
     </head>
     <body>
+
+        <div id="hero-div">
+            <picture id="hero">
+                <source media="(min-width:1024px)" srcset="images/bountiful-foods-hero-large.webp" alt="bountiful-hero">
+                <source media="(min-width:512px) and (max-width:1023px)" srcset="images/bountiful-foods-hero-medium.webp" alt="bountiful-hero">
+                <img src="images/bountiful-foods-hero-small.webp" alt="bountiful-hero">
+            </picture>
+        </div>
+
         <header>
 
             <div id="header-sub-div">
-                <a href="home.html"><img id="logo" src="images/placeholder-square.png" alt="Bountiful Logo" width="200", height="200"></a>
+                <a href="home.html"><img id="logo" src="images/bountiful-foods-logo.webp" alt="Bountiful Logo" width="200", height="200"></a>
                 
                 <h1>Bountiful Foods</h1>
             </div>
@@ -31,17 +39,52 @@
             
         </header>
     
-        <main>
+        <main id="attributions-main">
 
-            <section id="Attributions">
-                <h2>Attributions</h2>
+            <section id="attributions-section">
+                
+                <article id="attributions">
+                    <h2>Attributions</h2>
 
-                <ul>
+                <ul id="master-list">
+                    <li>Text Generated using <a href="https://chat.openai.com/">ChatGPT By Open AI (Free Version)</a></li>
                     <li><a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a></li>
                     <li><a href="https://www.flaticon.com/free-icons/twitter-logo" title="twitter logo icons">Twitter logo icons created by Md Tanvirul Haque - Flaticon</a></li>
                     <li><a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icons created by Pixel perfect - Flaticon</a></li>
-                    <li><a href="https://www.w3schools.com/" >Code Help</a></li>
+                    
+                    <li>Code Help:
+                        <ul>
+                            <li><a href="https://www.w3schools.com/" >W3 Schools</a></li>
+                            <li><a href="https://html.form.guide/html-form/form-action-using-javascript-function/">HTML.form.guide</a></li>
+                            <li><a href="https://www.tutorialspoint.com/how-to-stop-refreshing-the-page-on-submit-in-javascript">tutorialspoint</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+
+                    <li>Images
+                        <ul>
+                            <li><a href="https://www.pexels.com/photo/assorted-fruits-stall-709567/">Small Hero Image by Ian Turnell on Pexels</a></li>
+                            <li><a hre="https://www.pexels.com/photo/closeup-photo-of-slice-of-orange-1435735/">Oranges by Engin Akyurt</a></li>
+                            <li><a href="https://www.pexels.com/photo/sliced-dragon-fruits-on-ceramic-plate-1437598/">Large Hero Image - Dragon Fruit by Lovefood Art</a></li>
+                            <li><a href="https://www.pexels.com/photo/fresh-berries-on-trays-in-market-5273044/">Berries by Julia Volk</a></li>
+                            <li><a href="https://www.pexels.com/photo/berries-blackberries-close-up-cocktail-434295/">Berry Cocktails by Pixabay</a></li>
+                            <li><a href="https://www.pexels.com/photo/strawberry-smoothie-on-glass-jar-775032/">Photo by Element5 Digital</a></li>
+                            <li><a href="https://www.pexels.com/photo/photo-of-fruits-and-smoothie-on-a-bowl-4099238/">Smoothie Bowls by Taryn Elliott: </a></li>
+                        </ul>
+                    </li>
+
+                    <li>Weather Data from <a href="https://openweathermap.org/city/4380043">Openweather API</a></li>
+
+                    <li>City information:
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Solana_Beach,_California" >Solana Beach</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Carlsbad,_California">Carlsbad</a></li>
+                        </ul>
+                    </li>
                 </ul>
+
+                </article>
 
             </section>
 
@@ -57,16 +100,17 @@
     
             <div id="author-info">
                 <p>&copy; Zach Newby 2023 .:|:. Carl Junction MO .:|:. </p>
-                <a href="attributions.html">Attributions</a>
+                <a id="attributions-link" href="attributions.html">Attributions</a>
                 <p>Last Updated: <span id=last-update></span></p>
             </div>
     
             <div id="address">
-                <p>Head Office: 1247 Poop Street Carlsbad, CA</p>
+                <p>Head Office: 1247 Wren Street Carlsbad, CA</p>
                 <p>Hours: Mon-Fri: 9AM - 5PM | Sat: 9AM-3PM | Closed Sundays</p>
-                <p>Directions: <a href="https://www.google.com/maps/place/Auckland+Island+%2F+Motu+Maha/@-50.6837352,165.4537849,10z/data=!3m1!4b1!4m12!1m5!3m4!2zMzfCsDA5JzA2LjQiTiA5NMKwMzInNDMuMSJX!8m2!3d37.1517855!4d-94.5453048!3m5!1s0xa9b36ff135215f65:0xb1ae662821ea0030!8m2!3d-50.7446743!4d166.0563795!16zL20vMDJsOHM3?entry=ttu">Bountiful Foods HQ</a> </p>
+                <p>Directions: <a id="map-link" href="https://www.google.com/maps/place/Auckland+Island+%2F+Motu+Maha/@-50.6837352,165.4537849,10z/data=!3m1!4b1!4m12!1m5!3m4!2zMzfCsDA5JzA2LjQiTiA5NMKwMzInNDMuMSJX!8m2!3d37.1517855!4d-94.5453048!3m5!1s0xa9b36ff135215f65:0xb1ae662821ea0030!8m2!3d-50.7446743!4d166.0563795!16zL20vMDJsOHM3?entry=ttu">Bountiful Foods HQ</a> </p>
             </div>
         </footer>
     
+        <script src="scripts/lastmod.js"></script>
     </body>
 </html>

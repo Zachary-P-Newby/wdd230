@@ -70,18 +70,18 @@ nav{
     padding: 0;
 }
 
-nav ul li a{
+#navMenu li a{
     display: none;
     text-decoration: none;
     color: white;
     font-size: 1rem;
 }
 
-nav ul li a.active{
+#navMenu li a.active{
     background-color: rgba(0, 0, 0, 0.15);
 }
 
-nav ul.open li a{
+#navMenu.open li a{
     display: block;
     text-decoration: none;
     color: white;
@@ -90,7 +90,7 @@ nav ul.open li a{
     padding: 1vw;
 }
 
-nav ul li a:hover{
+#navMenu li a:hover{
     background-color: #485696;
 }
 
