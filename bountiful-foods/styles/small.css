@@ -22,13 +22,13 @@ a:hover{
 
 h1, h2, h3{
     font-family: "Lilita One", Arial, Helvetica, sans-serif;
-    color: #fdf7fa;
+    color: white;
     margin: .6vh auto;
 }
 
 /* Header*/
 header{
-    background-color: #20bf55;
+    background-color: #12923c;
     border-bottom: #da4167 solid 1rem;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -71,7 +71,7 @@ nav{
 }
 
 nav a{
-    background-color: #01baef;
+    background-color: #005fbe;
     border-radius: 25px;
     padding: .5rem;
     border: #fdf7fa solid .5rem;
