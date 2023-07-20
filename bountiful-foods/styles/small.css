@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lilita+One&display=swap');
-/*Colors:  #158039, #fdf7fa, #3a2e39, #da4167 #0086f5*/
+/*Colors:  #18ae4a, #fdf7fa, #3a2e39, #da4167 #01baef*/
 
 body{
     background-color: antiquewhite;
@@ -11,10 +11,10 @@ body{
     color: #3a2e39;
 }
 
-/*  #158039   #0086f5*/
+/*  #18ae4a   #01baef*/
 
 a, li{
-    color: white;
+    color: #fdf7fa;
 }
 
 a:hover{
@@ -29,7 +29,7 @@ h1, h2, h3{
 
 /* Header*/
 header{
-    background-color: #158039;
+    background-color: #18ae4a;
     border-bottom: #da4167 solid 1rem;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -72,9 +72,10 @@ nav{
 }
 
 nav a{
-    background-color: #0086f5;
+    background-color: #01baef;
     border-radius: 25px;
     padding: .5rem;
+    color: #3a2e39;
     border: #fdf7fa solid .5rem;
     min-width: 20vw;
     margin: 0;
@@ -82,6 +83,7 @@ nav a{
 
 nav a.active{
     background-color: #3a2e39;
+    color: #fdf7fa;
 }
 
 nav a:hover{
@@ -92,7 +94,7 @@ nav a:hover{
 /* Footer */
 
 footer{
-    background-color: #158039;
+    background-color: #18ae4a;
     border-top: #da4167 solid 1rem;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -219,7 +221,7 @@ main section{
 #call-to-action a{
     margin: auto;
     font-size: 2rem;
-    background-color: #158039;
+    background-color: #18ae4a;
     border-radius: 25px;
     text-decoration: none;
     box-shadow: 5px 5px #fdf7fa;
@@ -248,7 +250,7 @@ main section{
 }
 
 #weather-widget article{
-    background-color: #0086f5;
+    background-color: #01baef;
     border-radius: 5px;
     margin: 2vh auto;
     box-shadow: 5px 5px #fdf7fa;
@@ -310,7 +312,7 @@ main section{
 }
 
 #area-btn{
-    background-color: #0086f5;
+    background-color: #01baef;
     padding: 1vh 1vw;
     border-radius: 25px;
     color: #3a2e39;
@@ -323,7 +325,7 @@ main section{
 
 #area-btn:hover{
     background-color: #fdf7fa;
-    color: #0086f5 ;
+    color: #01baef ;
 }
 
 #area-btn-list .area-selector-btn{
@@ -353,7 +355,7 @@ main section{
     flex-direction: column;
     background-color: #fdf7fa;
     padding: .5vh .5vw;
-    box-shadow: 5px 5px #158039;
+    box-shadow: 5px 5px #18ae4a;
     border-radius: 5px;
 }
 
@@ -415,7 +417,7 @@ input:invalid{
 
 
 #submit-btn{
-    background-color: #0086f5;
+    background-color: #01baef;
     padding: 2vh 2vw;
     border-radius: 25px;
     
@@ -423,7 +425,7 @@ input:invalid{
 
 #submit-btn:hover{
     background-color: #fdf7fa;
-    color:#0086f5;  
+    color:#01baef;  
 }
 
 
@@ -443,7 +445,7 @@ input:invalid{
     background-color: #fdf7fa;
     padding: 1vw;
     border-radius: 5px;
-    box-shadow: 5px 5px #158039;
+    box-shadow: 5px 5px #18ae4a;
 }
 
 #find-us a{
