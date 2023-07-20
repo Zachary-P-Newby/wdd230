@@ -490,7 +490,6 @@ input:invalid{
 #attributions{
     background-color: #3a2e39;
     padding: 20px;
-    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 #attributions h2{
