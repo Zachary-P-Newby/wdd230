@@ -20,7 +20,7 @@
     #weather-widget{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-row: 1fr 4fr;
+        grid-template-rows: 1fr 4fr;
     }
     
     #weather-widget h2{
@@ -51,6 +51,8 @@
     #day2{
         border-left:#fdf7fa 1px solid ;
         border-right:#fdf7fa 1px solid ;
+        border-top: 0;
+        border-bottom: 0;
     }
 
 
