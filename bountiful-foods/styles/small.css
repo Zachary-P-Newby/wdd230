@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lilita+One&display=swap');
-/*Colors:  #20bf55, #fdf7fa, #3a2e39, #da4167 #01baef*/
+/*Colors:  #158039, #fdf7fa, #3a2e39, #da4167 #0086f5*/
 
 body{
     background-color: antiquewhite;
@@ -11,6 +11,7 @@ body{
     color: #3a2e39;
 }
 
+/*  #158039   #0086f5*/
 
 a, li{
     color: white;
@@ -28,7 +29,7 @@ h1, h2, h3{
 
 /* Header*/
 header{
-    background-color: #20bf55;
+    background-color: #158039;
     border-bottom: #da4167 solid 1rem;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -71,7 +72,7 @@ nav{
 }
 
 nav a{
-    background-color: #01baef;
+    background-color: #0086f5;
     border-radius: 25px;
     padding: .5rem;
     border: #fdf7fa solid .5rem;
@@ -91,13 +92,14 @@ nav a:hover{
 /* Footer */
 
 footer{
-    background-color: #20bf55;
+    background-color: #158039;
     border-top: #da4167 solid 1rem;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     display: block;
     margin-top: 0;
     max-width: 100vw;
+    color: #fdf7fa;
 }
 
 footer div{
@@ -246,7 +248,7 @@ main section{
 }
 
 #weather-widget article{
-    background-color: #01baef;
+    background-color: #0086f5;
     border-radius: 5px;
     margin: 2vh auto;
     box-shadow: 5px 5px #fdf7fa;
@@ -308,7 +310,7 @@ main section{
 }
 
 #area-btn{
-    background-color: #01baef;
+    background-color: #0086f5;
     padding: 1vh 1vw;
     border-radius: 25px;
     color: #3a2e39;
@@ -321,7 +323,7 @@ main section{
 
 #area-btn:hover{
     background-color: #fdf7fa;
-    color: #01baef ;
+    color: #0086f5 ;
 }
 
 #area-btn-list .area-selector-btn{
@@ -351,7 +353,7 @@ main section{
     flex-direction: column;
     background-color: #fdf7fa;
     padding: .5vh .5vw;
-    box-shadow: 5px 5px #20bf55;
+    box-shadow: 5px 5px #158039;
     border-radius: 5px;
 }
 
@@ -413,7 +415,7 @@ input:invalid{
 
 
 #submit-btn{
-    background-color: #01baef;
+    background-color: #0086f5;
     padding: 2vh 2vw;
     border-radius: 25px;
     
@@ -421,7 +423,7 @@ input:invalid{
 
 #submit-btn:hover{
     background-color: #fdf7fa;
-    color:#01baef;  
+    color:#0086f5;  
 }
 
 
@@ -441,7 +443,7 @@ input:invalid{
     background-color: #fdf7fa;
     padding: 1vw;
     border-radius: 5px;
-    box-shadow: 5px 5px #20bf55;
+    box-shadow: 5px 5px #158039;
 }
 
 #find-us a{
